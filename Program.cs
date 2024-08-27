@@ -18,6 +18,8 @@ namespace NoviceChallenges
             IsEven(1);
             IsEven(2);
 
+
+
         }
 
         // 1. Return the sum of two numbers.
@@ -44,8 +46,7 @@ namespace NoviceChallenges
         // 3. Return the largest of three numbers.
         public static int MaxOfThree(int a, int b, int c)
         {
-            // HINT: You might want to use Math.Max function.
-            // TODO: Implement this method.
+            
             return 0;
         }
 
