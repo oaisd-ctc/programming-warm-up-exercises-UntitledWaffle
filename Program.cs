@@ -6,21 +6,39 @@ namespace NoviceChallenges
     {
         static void Main(string[] args)
         {
-            // Use the Main method to test your functions.
+            string waf, waffle;
+
+            waf = "Waffle";
+            waffle = "waf";
+
+            Console.WriteLine(waf);
+            Console.WriteLine(waffle);
+
+            Add(1, 2);
+            IsEven(1);
+            IsEven(2);
+
         }
 
         // 1. Return the sum of two numbers.
         public static int Add(int a, int b)
         {
-            // TODO: Implement this method.
+            Console.WriteLine(a+b);
             return 0;
         }
 
         // 2. Given an integer, return true if it's even, else return false.
         public static bool IsEven(int number)
         {
-            // TODO: Implement this method.
-            return false;
+            if (number % 2==0)
+            {
+                Console.WriteLine(number + " Number is even");
+            }
+            else
+            {
+                Console.WriteLine(number + " Number is odd");
+            }
+            return true;
         }
 
         // 3. Return the largest of three numbers.
