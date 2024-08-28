@@ -18,6 +18,9 @@ namespace NoviceChallenges
             IsEven(1);
             IsEven(2);
             MaxOfThree(3, 2, 1);
+            StringLength("HEEEEELP HEEEELP");
+            StartsHello(" Hello, Ms. Sofia");
+            StartsHello(" Mr. President");
 
 
         }
@@ -55,15 +58,18 @@ namespace NoviceChallenges
         public static int StringLength(string s)
         {
             
+            Console.WriteLine(s + " HEEEEEEEEEEELPPPPPPPPPPP HePL ME!" + s.Length);
             return 0;
         }
 
         // 5. Return true if the string starts with "Hello", otherwise return false.
         public static bool StartsHello(string s)
         {
-            // HINT: Use the string method "StartsWith".
-            // TODO: Implement this method.
-            return false;
+            if {
+            Console.WriteLine((s.Length < 6 && s.Equals("Hello")) || ( s.StartsWith("Hello") && s[5] == ','));
+            return true;
+            }
+            else { return false;}
         }
 
         // 6. Reverse a given string.
