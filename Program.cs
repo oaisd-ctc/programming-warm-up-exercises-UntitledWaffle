@@ -17,7 +17,7 @@ namespace NoviceChallenges
             Add(1, 2);
             IsEven(1);
             IsEven(2);
-
+            MaxOfThree(3, 2, 1);
 
 
         }
@@ -47,13 +47,14 @@ namespace NoviceChallenges
         public static int MaxOfThree(int a, int b, int c)
         {
             
-            return 0;
+            Console.WriteLine(Math.Max(a, Math.Max(b, c)));
+            return Math.Max(a, Math.Max(b, c));
         }
 
         // 4. Return the length of the given string.
         public static int StringLength(string s)
         {
-            // TODO: Implement this method.
+            
             return 0;
         }
 
