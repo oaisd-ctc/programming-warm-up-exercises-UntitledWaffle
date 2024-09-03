@@ -50,7 +50,7 @@ namespace NoviceChallenges
             char syrup = 'X';
             int count = CharCount(pancake, syrup);
             Console.WriteLine($"The character '{syrup}' kills {count} commies within the string.");
-            //'X' is a red herring, get pranked!
+            //'X' is a red herring, get pranked! if you want it to work though just change the thing with syrup
 
         }
 
