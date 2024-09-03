@@ -32,18 +32,18 @@ namespace NoviceChallenges
             Console.WriteLine(Fibonacci(9));
             Console.WriteLine(IsPalindrome("racecar"));
             Console.WriteLine(IsPalindrome("waffle"));
-            CharCount("wattaer",'a');
+            CharCount("wattaer", 'a');
             SwapEnds("Nixon");
             ConcatenateStrings("I am", " el president");
             // The Ez section
 
             // The "Free Bird" Section: https://www.youtube.com/watch?v=EUc1AhTdG3U&t=48s
-            int[] numbers = {1, 2, 3, 4};
-            int[] RAHHHHHH = {4, 3, 4, 6, 20, 40, 1, 60, 100, 120, 6};
+            int[] numbers = { 1, 2, 3, 4 };
+            int[] RAHHHHHH = { 4, 3, 4, 6, 20, 40, 1, 60, 100, 120, 6 };
             Console.WriteLine(LargestInArray(numbers));
             Console.WriteLine(LargestInArray(RAHHHHHH));
-            int[] WAHHHH = {1, 2, 3, 4};
-            int[] Donald = {1, 2, 3, 6};
+            int[] WAHHHH = { 1, 2, 3, 4 };
+            int[] Donald = { 1, 2, 3, 6 };
             Console.WriteLine(ArraySum(WAHHHH));
             Console.WriteLine(ArraySum(Donald));
             string pancake = "DIE COMMIE SCUM! XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX xxxxx XXX x / xxx";
@@ -57,14 +57,14 @@ namespace NoviceChallenges
         // 1. Return the sum of two numbers.
         public static int Add(int a, int b)
         {
-            Console.WriteLine(a+b);
+            Console.WriteLine(a + b);
             return 0;
         }
 
         // 2. Given an integer, return true if it's even, else return false.
         public static bool IsEven(int number)
         {
-            if (number % 2==0)
+            if (number % 2 == 0)
             {
                 Console.WriteLine(number + " Number is even");
             }
@@ -78,7 +78,7 @@ namespace NoviceChallenges
         // 3. Return the largest of three numbers.
         public static int MaxOfThree(int a, int b, int c)
         {
-            
+
             Console.WriteLine(Math.Max(a, Math.Max(b, c)));
             return Math.Max(a, Math.Max(b, c));
         }
@@ -86,7 +86,7 @@ namespace NoviceChallenges
         // 4. Return the length of the given string.
         public static int StringLength(string s)
         {
-            
+
             Console.WriteLine(s + " HEEEEEEEEEEELPPPPPPPPPPP HePL ME!" + s.Length);
             return 0;
         }
@@ -94,7 +94,7 @@ namespace NoviceChallenges
         // 5. Return true if the string starts with "Hello", otherwise return false.
         public static bool StartsHello(string s)
         {
-            Console.WriteLine((s.Length < 6 && s.Equals("Hello")) || ( s.StartsWith(" Hello") && s[5] == ' '));
+            Console.WriteLine((s.Length < 6 && s.Equals("Hello")) || (s.StartsWith(" Hello") && s[5] == ' '));
             return true;
         }
 
@@ -103,21 +103,22 @@ namespace NoviceChallenges
         {
             char[] charArray = s.ToCharArray();
             int Length = charArray.Length;
-            for( int i = 0; i < Length / 2; i++){
-            char temp = charArray [i];
-            charArray [i] = charArray[Length - i - 1];
-            charArray[Length - i - 1] = temp;
+            for (int i = 0; i < Length / 2; i++)
+            {
+                char temp = charArray[i];
+                charArray[i] = charArray[Length - i - 1];
+                charArray[Length - i - 1] = temp;
             }
             Console.WriteLine(charArray);
             return new string(charArray);
-            
+
         }
 
         // 7. Return the factorial of a number.
         public static int Factorial(int n)
         {
             if (n == 0) return 1;
-            
+
             return n * Factorial(n - 1);
         }
 
@@ -138,8 +139,9 @@ namespace NoviceChallenges
         {
             if (n <= 1) return n;
 
-            else {
-                return Fibonacci (n-1) + Fibonacci(n-2);
+            else
+            {
+                return Fibonacci(n - 1) + Fibonacci(n - 2);
 
 
             }
@@ -166,7 +168,7 @@ namespace NoviceChallenges
             for (int i = 0; i < length / 2; i++)
             {
                 if (s[i] != s[length - i - 1])
-                return false;
+                    return false;
 
             }
             return true;
@@ -182,7 +184,7 @@ namespace NoviceChallenges
         public static int CharCount(string s, char c)
         {
             int count = s.Count(f => f == ' ');
-            
+
 
             return count;
         }
@@ -201,8 +203,8 @@ namespace NoviceChallenges
             char firstChar = s[0];
             char lastChar = s[s.Length - 1];
             string middlepart = s.Substring(1, s.Length - 2);
-            Console.WriteLine(lastChar + middlepart+ firstChar);
-            return lastChar + middlepart+ firstChar;
+            Console.WriteLine(lastChar + middlepart + firstChar);
+            return lastChar + middlepart + firstChar;
         }
     }
 }
