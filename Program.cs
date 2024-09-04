@@ -202,7 +202,7 @@ namespace NoviceChallenges
             }
             return true;
         }
-        // Goes through the string and 
+        // Goes through the string and checks if the string is the same
 
         // 12. Given an array of integers, return the sum of its elements.
         public static int ArraySum(int[] numbers)
@@ -210,6 +210,8 @@ namespace NoviceChallenges
             int sum = numbers.Sum();
             return sum;
         }
+        //Grabs an array from main and sums it all into a int and sends it back to main to be printed
+
         // 13. Given a string, count how many times a specified character appears in it.
         public static int CharCount(string s, char c)
         {
@@ -218,6 +220,7 @@ namespace NoviceChallenges
 
             return count;
         }
+        // The prank code; This grabs a string and sifts through it to look for all blank space chars.
 
         // 14. Given two strings, return a new string that is the concatenation of the two strings with a space in between.
         public static string ConcatenateStrings(string str1, string str2)
@@ -225,6 +228,7 @@ namespace NoviceChallenges
             Console.WriteLine(str1 + str2);
             return str1 + str2;
         }
+        // grabs two strings and turns them into a single string
 
         // 15. Given a string, return a new string where the first and last characters have been swapped.
         public static string SwapEnds(string s)
@@ -236,5 +240,7 @@ namespace NoviceChallenges
             Console.WriteLine(lastChar + middlepart + firstChar);
             return lastChar + middlepart + firstChar;
         }
+        // Grabs a string cuts it into three and swaps the end parts.
+
     }
 }
